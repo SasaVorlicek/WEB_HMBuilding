@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>HMBuilding | O NÁS</title>
+</head>
+<body>
+    <header class="website-page-header">
+        <nav class="page-navbar">
+            <a href="./index.html"><img class="page-navbar__logo" alt="Logo stránky" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU          <!--   PX FIX   -->
+                <button class="page-navbar__hamburger" >&#xe9bd;</button>
+            </a>
+            <ul id="hamburger" class="page-navbar__items">
+                <li><a href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#services">SLUŽBY</a></li>
+                <li><a href="./index.html#reference">REFERENCE</a></li>
+                <li class="nav-active"><a href="./o_nas.html">O NÁS</a></li>
+                <li><a href="./kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+            <header class="page-header page-header--other">
+            <h1 class="page-header__main-heading">HM Building.cz s.r.o.</h1>
+            <h2 class="page-header__second-heading">liberecká stavební společnost</h2>
+            <p class="page-header__cta"><a href="#services" class="button button--arrow">pokračovat</a></p>
+        </header> 
+    </header> 
+    <section id="services" class="services">
+        <header class="services_reference-header services_reference-header--margin">
+            <p class="services_reference-header__heading">O nás</span></p>
+            <p class="services_reference-header__text services_reference-header__text--left_align">Společnost <b>HM Building.cz s.r.o.</b> nabízí své <b>služby ve stavebnictví od roku 2015</b>, a to převážně <b>po Libereckém kraji</b>.</p>
+            <p class="services_reference-header__text services_reference-header__text--left_align">V oboru pozemního stavitelství <b>provádíme stavbu a rekonstrukci:</b></p>
+        </header>
+        <ul class="services-list services-list--padding">
+            <li>průmyslových staveb</li>
+            <li>obytných staveb</li>
+            <li>staveb občanské vybavenosti</li>
+            <li>komunikaci vozidlových, ale i pěších</li>
+        </ul>
+        <p class="services_reference-header__text services_reference-header__text--left_align">Zakázky můžeme řešit tzv. <b>na klíč</b>, kde jsme schopni zajistit dodávky a montáž elektroinstalace NN a VN, zdravotně – technické instalace, ústředního vytápění, vzduchotechniky, MaR, případně jsme schopni, po dohodě s investorem, dodat pouze některou ucelenou část celkové zakázky.</p>
+        <p class="services_reference-header__text services_reference-header__text--left_align">Naše firma taktéž zajišťuje <b>projekční služby a služby týkající se statického posouzení staveb</b> v oboru pozemního stavitelství a dále jsme schopni zajistit <b>investorsko–inženýrské služby</b>.</p>
+        <p class="services_reference-header__text services_reference-header__text--left_align"><b>Záruční doba</b> na námi provedená díla se pohybuje od 24 do 60 měsíců.</p>
+    </section>
+    
+    <footer class="page-footer">
+        <p class="page-footer__heading">Plácneme si pro Váš projekt?</p>
+        <p class="page-footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <p class="page-footer_cta"><a href="./kontakt.html" class="button button--white">Nezávazně poptat</a></p>
+    </footer>
+
+
+    <script>
+        function Hamburger() {
+            document.getElementById("hamburger").classList.toggle("is-active");
+            }
+    </script>
+</body>
+</html>

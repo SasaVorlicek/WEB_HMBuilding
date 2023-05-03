@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>HMBuilding | REFERENCE</title>
+</head>
+<body>
+    <header class="website-page-header">
+        <nav class="page-navbar">
+            <a href="./index.html"><img class="page-navbar__logo" alt="Logo stránky" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU          <!--   PX FIX   -->
+                <button class="page-navbar__hamburger" >&#xe9bd;</button>
+            </a>
+            <ul id="hamburger" class="page-navbar__items">
+                <li><a href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#services">SLUŽBY</a></li>
+                <li class="nav-active" ><a href="./index.html#reference">REFERENCE</a></li>
+                <li><a href="./o_nas.html">O NÁS</a></li>
+                <li><a href="./kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+            <header class="page-header page-header--other">
+            <h1 class="page-header__main-heading">HM Building.cz s.r.o.</h1>
+            <h2 class="page-header__second-heading">liberecká stavební společnost</h2>
+            <p class="page-header__cta"><a href="#services" class="button button--arrow">pokračovat</a></p>
+        </header> 
+    </header> 
+
+    <section id="reference" class="reference">
+        <header class="services_reference-header services_reference-header--margin">
+            <p class="services_reference-header__heading">Reference</p>
+            <p class="services_reference-header__text">Stojí za námi <b>kvalitně vyhotovené zakázky</b> dle konkrétních požadavků zadavatelů <b>podepřené letitými zkušenostmi ve stavebnictví</b>. To, že <b>obrátit se na právě nás je vhodná volba potvrdí naši klienti</b>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
+        </header>
+        <div class="reference__items">
+            <a href="./zbrojnice.html"><figure class="reference-item">
+                <img class="reference-item__img" alt="Fotka námi předělané hasičské stanice" src="media/reference/reference-hasicska-zbrojnice-600w.jpg">
+                <div class="reference-item__info">
+                    <p class="reference-item__heading">Hasičská zbrojnice</p>
+                    <p class="reference-item__text">celková rekonstrukce</p>
+                </div>
+            </figure></a>
+            <a href="./pradelna.html"><figure class="reference-item">
+                <img class="reference-item__img" alt="Fotka námi rekonstruované samoobslužné prádelny" src="media/reference/reference-pradelna-600w.jpg">
+                <div class="reference-item__info">
+                    <p class="reference-item__heading">Samoobslužná prádelna</p>
+                    <p class="reference-item__text">stavební úpravy a opravy</p>
+                </div>
+            </figure></a>
+            <a href="./plochy.html"><figure class="reference-item">
+                <img class="reference-item__img" alt="Fotka pro referenci venkovních ploch, které provádíme" src="media/reference/reference-plocha-600w.jpg">
+                <div class="reference-item__info">
+                    <p class="reference-item__heading">Venkovní plochy Restyl</p>
+                    <p class="reference-item__text">provedení venkovnách ploch</p>
+                </div>
+            </figure></a>
+        </div>
+    </section>
+    
+    <footer class="page-footer">
+        <p class="page-footer__heading">Plácneme si pro Váš projekt?</p>
+        <p class="page-footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <p class="page-footer_cta"><a href="./kontakt.html" class="button button--white">Nezávazně poptat</a></p>
+    </footer>
+
+
+    <script>
+        function Hamburger() {
+            document.getElementById("hamburger").classList.toggle("is-active");
+            }
+    </script>
+</body>
+</html>
+</script>

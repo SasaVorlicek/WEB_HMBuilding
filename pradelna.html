@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>HMBuilding | pRÁDELNA</title>
+</head>
+<body>
+    <header class="website-page-header">
+        <nav class="page-navbar">
+            <a href="./index.html"><img class="page-navbar__logo" alt="Logo stránky" src="media/logo.png"></a>
+            <a onclick="Hamburger()" class="hamburger__text" href="javascript:void(0)">MENU          <!--   PX FIX   -->
+                <button class="page-navbar__hamburger" >&#xe9bd;</button>
+            </a>
+            <ul id="hamburger" class="page-navbar__items">
+                <li><a href="./index.html">DOMŮ</a></li>
+                <li><a href="./index.html#services">SLUŽBY</a></li>
+                <li class="nav-active" ><a href="./index.html#reference">REFERENCE</a></li>
+                <li><a href="./o_nas.html">O NÁS</a></li>
+                <li><a href="./kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <header class="page-header page-header--other">
+            <h1 class="page-header__main-heading">HM Building.cz s.r.o.</h1>
+            <h2 class="page-header__second-heading">liberecká stavební společnost</h2>
+            <p class="page-header__cta"><a href="#services" class="button button--arrow">pokračovat</a></p>
+        </header> 
+    </header>  
+
+    <section id="services" class="services">
+        <header class="services_reference-header services_reference-header--margin">
+            <p class="services_reference-header__heading">Samoobslužná prádelna</span></p>
+            <p class="services_reference-header__text">Stavební úpravy a opravy v rámci zřízení samoobslužné prádelny v Liberci.</p>
+        </header>
+        <div class="services__gallery">
+            <img class="gallery__img" alt="Jedna z fotek v galerii" src="media/reference/pradelna/reference-pradelna-01.jpeg">
+            <img class="gallery__img" alt="Jedna z fotek v galerii" src="media/reference/pradelna/reference-pradelna-02.jpeg">
+            <img class="gallery__img" alt="Jedna z fotek v galerii" src="media/reference/pradelna/reference-pradelna-03.jpeg">
+            <img class="gallery__img" alt="Jedna z fotek v galerii" src="media/reference/pradelna/reference-pradelna-04.jpeg">
+            <img class="gallery__img gallery__img--tall" alt="Jedna z fotek v galerii" src="media/reference/pradelna/reference-pradelna-05.jpeg">
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <p class="page-footer__heading">Plácneme si pro Váš projekt?</p>
+        <p class="page-footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <p class="page-footer_cta"><a href="./kontakt.html" class="button button--white">Nezávazně poptat</a></p>
+    </footer>
+
+
+    <script>
+        function Hamburger() {
+            document.getElementById("hamburger").classList.toggle("is-active");
+            }
+    </script>
+</body>
+</html>
